@@ -1,29 +1,136 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="">
 <head>
-    <title>Codileng oficial</title>
-    <style>
-        body{
-            background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
-        }
-            h1{
-                color: red;
-            }
-            #parrafo{
-                font-size: 35px;
-                color: #000;
-            }
-            p{
-                font-size: 25px;
-                color: springgreen;
-            }
-        </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>Códileng oficial</title>
+    <meta name="description" content="Codileng es la primera empresa de software en San Luis de la Paz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="codigo.js"></script>
+
 </head>
 <body>
-    <h1>Bienvenidos a Codileng</h1>
-    <p id="parrafo">Este espacio es para darle continuidad al proyecto de Codileng</p>
-    <p>Y esto es un párrafo</p>
-    <img src="data:image/png;base64,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">
+        <div class="navbar">
+            <a href="#principal">Principal</a>
+            <a href="#patrocinadores">Patrocinadores</a> 
+            <div class="subnav">
+              <button class="subnavbtn" > Servicios <i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content">
+                <a href="#servicios" onclick="mostrarServicios()">Inclusión Digital</a>
+                <a href="#capacitacion">Capacitación</a>
+              </div>
+            </div> 
+            <div class="subnav">
+              <button class="subnavbtn" onclick="mostrarTutoriales()">Tutoriales</button>
+            </div>
+            <a href="#social">Servicio Social</a> 
+            <a href="#juegos">Diviértete</a>
+            <a href="#contacto">Contacto</a>
+        </div>         
+            
+            <div id="div-img" class="centrado">
+                <img src="./img/logoCodileng.png" alt="logo codileng" width="200px" height="auto">
+                <h2>La primera empresa de software en San Luis de la Paz</h2>
+            </div>
+                
+        <div id="patrocinadores" class="centrado">
+            <h3>Patrocinadores</h3>
+            <p>Para llevar a cabo nuestro proyecto necesitamos de tu apoyo.</p>
+            <p>Anuncia tu negocio o servicio en esta sección a cambio de un donativo.</p>
+        </div>
+
+        <div id="campana" class="centrado">
+          <h3>Campaña de Inclusión Digital</h3>
+          <p>Tu página web por solo <strong>$ 300.00</strong></p>
+          <p><a href="#" onclick="mostrarServicios()">Ver más</a></p>
+        </div>
+
+        <div id="servicios" style="display: none;" class="centrado">
+            <h3>Campaña de Inclusión Digital</h3>
+            <p>Dirigida a todos los pequeños negocios y quienes ofrecen un servicio profesional</p>
+            <h3>Te ofrecemos</h3>
+            <ul>
+                <li>Página Web profesional optimizada para dispositivos móviles</li>
+                <p>Tu página se verá genial en una computadora, tablet o celular</p>
+                <li>Con subdominio y hosting gratuito</li>
+                <p>Un subdominio es garantía de que el nombre de tu negocio sea único.<br/>
+                   Tu página alojada gratuitamente en servidores con altos estándares de seguridad</p>
+                <li>Aplicación de herramientas SEO para que te encuentren en Google</li>
+                <p>SEO es la tecnología que posiciona tu página en los primeros resultados de búsqueda en Google</p>
+                <li>Formulario de contacto, para que tus clientes te envíen un mensaje a tu email</li>
+                <p>Así puedes crear una base de clientes y enviar publicidad masiva</p>
+                <li>Mapa de Google con tu ubicación precisa, así no se pierden tus clientes</li>
+                <p>Si quieres que tus clientes lleguen a tu negocio enséñales el camino</p>
+                <p style="font-size: 1.5em;">Por tan solo un pago único de <strong>$ 300.00</strong></p>
+                <p>Somos expertos en Software libre</p>
+            </ul>
+            <p><a href="#" onclick="esconderServicios()">Ver menos</a></p>
+        </div>
+        <div id="capacitacion" class="centrado">
+            <h3 >Te capacitamos en:</h3>
+            <a href="#web" onclick="mostrarWeb()">Desarrollo Web</a>&nbsp; &nbsp;
+            <a href="#android" onclick="mostrarAndroid()">Desarrollo Android</a>&nbsp; &nbsp;
+            <a href="#salesforce" onclick="mostrarSalesforce()">Salesforce</a>&nbsp; &nbsp;
+            <a href="#linux" onclick="mostrarLinux()">GNU/Linux</a>
+            <ul>
+              <div id="web" style="display: none;">
+                  <li >Desarrollo Web Full Stack</li>
+                  <p>Aprende a diseñar y programar páginas web desde cero y adeńtrate en el mundo digital</p>
+                </div>
+                <div id="android" style="display: none;">
+                <li>Desarrollo de aplicaciones para Android</li>
+                <p>Crea las Apps del futuro para dispositivos móviles</p>
+              </div>
+              <div id="salesforce" style="display: none;">
+                <li>Salesforce: Administrador y Desarrollador</li>
+                <p>Cada vez más empresas adoptan esta plataforma en la nube y la demanda de personal calificado es muy alta</p>
+              </div>
+                <div id="linux" style="display: none;">
+                <li >Sistemas Operativos GNU/Linux, como Ubuntu, Fedora, Mint, etc.</li>
+                <p>Aprende a instalar, configurar y utilizar un Sistema Operativo GNU/Linux y olvídate de piratear Windows,<br/> 
+                  deja de preocuparte por virus y utiliza programas originales con licencia libre. Haz todo lo que te imaginas con GNU/Linux.<br/>
+                  Incluso instala programas para Windows en GNU/Linux</p>
+                <li>Aplicaciones libres, tanto para GNU/Linux y Windows</li>
+                <p>Hay un sinfín de aplicaciones para cada necesidad que no requieren pago y son originales, <br/>
+                  la mayoría disponibles para todos los Sistemas Operativos.<br/>
+                  Office, diseño gráfico, audio, video, desarrollo, entre muchas otras.
+                  </p>
+                  <p>Acá te dejamos un link en el que encontrarás opciones libres a aplicaciones de pago,<br/>
+                      solamente haz click <a href="https://www.skinatech.com/portal/alternativas-de-software-libre/"><strong>aquí</strong></a></p><br/>
+                </div>
+                
+            </ul>
+        </div>
+        <div id="tutoriales" style="display: none;" class="centrado">
+            <h3>Tutoriales en Youtube</h3>
+            <p>También puedes visitar nuestro canal de <a href="https://www.youtube.com/channel/UC5UyqJIlOCuJtIb-Trm5XSQ"><strong>Youtube</strong></a></p>
+            <p>Aqui encontrarás distintos tutoriales sobre tecnología</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/578RNZilGs8?controls=1"></iframe>
+        </div>
+        <div id="social" class="centrado">
+            <h3>Servicio Social</h3>
+            <p>Puedes hacer tu servicio social con nosotros</p>
+        </div>
+        <div id="pacman" class="centrado">
+            <h3>Zona de juegos</h3>
+            <canvas id="myCanvas" width="480" height="320"></canvas>
+          </div>
+        <div id="contacto" class="centrado" class="background-SanLuis">
+            <h3>Estamos en San Luis de la Paz</h3>
+            <p>Envíanos un correo a codileng@gmail.com</p>
+            <img src="./img/sanLuis.jpg" alt="San Luis" height="200px" width="auto">
+        </div>
+
+        <footer>
+            <p>Copyright &COPY; 2020 Daniel Ramírez Pérez  | San Luis de la Paz, Guanajuato</p>
+        </footer>
 </body>
+<script src="codigo.js">
+
+</script>
 </html>
