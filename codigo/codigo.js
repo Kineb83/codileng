@@ -5,6 +5,7 @@ var android = document.getElementById("android");
 var sales = document.getElementById("salesforce");
 var lin = document.getElementById("linux");
 var tutos = document.getElementById("tutoriales");
+var funny = document.getElementById("diversion");
 
 function mostrarServicios() {
 let servicios = document.getElementById("servicios");
@@ -22,7 +23,7 @@ function esconderServicios() {
 
 function mostrarWeb() {
   if (w.style.display === "none") {
-    servicios.style.display = "none"
+    servicios.style.display = "none";
     w.style.display = "block";
     android.style.display = "none";
     sales.style.display = "none";
@@ -33,7 +34,7 @@ function mostrarWeb() {
 
 function mostrarAndroid() {
   if (android.style.display === "none") {
-    servicios.style.display = "none"
+    servicios.style.display = "none";
     w.style.display = "none";
     android.style.display = "block";
     sales.style.display = "none";
@@ -44,7 +45,7 @@ function mostrarAndroid() {
 
 function mostrarSalesforce() {
   if (sales.style.display === "none") {
-    servicios.style.display = "none"
+    servicios.style.display = "none";
     w.style.display = "none";
     android.style.display = "none";
     sales.style.display = "block";
@@ -53,9 +54,17 @@ function mostrarSalesforce() {
   }
 }
 
+function mostrarJuegos(){
+  if (funny.style.display === "none") {
+      funny.style.display = "block";
+  }else{
+    funny.style.display = "none";
+  }
+}
+
 function mostrarLinux() {
   if (lin.style.display === "none") {
-    servicios.style.display = "none"
+    servicios.style.display = "none";
     w.style.display = "none";
     android.style.display = "none";
     sales.style.display = "none";
@@ -66,12 +75,15 @@ function mostrarLinux() {
 
 function mostrarTutoriales() {
   if (tutos.style.display === "none") {
-    servicios.style.display = "none"
+    servicios.style.display = "none";
     w.style.display = "none";
     android.style.display = "none";
     sales.style.display = "none";
     lin.style.display = "none";
     tutos.style.display = "block";
+    game.style.display = "block";
   }
 }
+
+
 
