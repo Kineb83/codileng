@@ -29,7 +29,7 @@
               <button class="subnavbtn" onclick="mostrarTutoriales()">Tutoriales</button>
             </div>
             <a href="#social">Servicio Social</a> 
-            <a href="#diversion" onclick="mostrarJuegos()">Diviertete</a>
+            <a href="#diversion" onclick="verCanvas()">Diviertete</a>
             <a href="#contacto">Contacto</a>
         </div>         
             
@@ -118,19 +118,14 @@
         </div>
         <div id="diversion" style="display: none;" class="centrado">
           <h3>Diviértete con algunos juegos sencillos.</h3>
-          <canvas id="canvas" style="background: silver;"></canvas>
-          Tu navegador no soporta el uso de Canvas.
+          <canvas id="draw" width="300px" height="300px">Tu navegador no soporta el uso de Canvas.</canvas>
+          
         </div>
         
         
         <div id="contacto" class="centrado" class="background-SanLuis">
             <h3>Estamos en San Luis de la Paz  .</h3>
             <p>Envíanos un correo a codileng@gmail.com</p>
-            <form accept-charset="UTF-8" action="https://usebasin.com/f/123456xabcdef" enctype="multipart/form-data" method="POST">
-              Ingresa tu Correo<input type="email" id="email" name="email" required>
-              Ingresa tu mensaje<textarea rows="4" cols="50" name="comment" required></textarea>
-              <button type="submit">Submit</button>
-            </form>
             <img src="./img/sanLuis.jpg" alt="San Luis" height="200px" width="auto">
         </div>
 
