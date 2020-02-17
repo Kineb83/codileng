@@ -136,31 +136,10 @@ function verCanvas(){
   });
 
   canvas.addEventListener('mousemove', draw);
-  canvas.addEventListener('mouseup', () => isDrawing = false);
-  canvas.addEventListener('mouseout', () => isDrawing = false);
-
-  canvas.addEventListener('touchstart', (e) =>{
-
+  canvas.addEventListener('touchstart', () => isDrawing, false);
+  canvas.addEventListener('touchmove', (e) => {
     isDrawing = true;
     [lastX, lastY] = [e.offsetX, e.offsetY];
-});
-canvas.addEventListener('touchmove', draw);
-canvas.addEventListener('touchend', () => isDrawing = false);
-
-// Prevent scrolling when touching the canvas
-document.body.addEventListener("touchstart", function (e) {
-  if (e.target == canvas) {
-    e.preventDefault();
-  }
-}, false);
-document.body.addEventListener("touchend", function (e) {
-  if (e.target == canvas) {
-    e.preventDefault();
-  }
-}, false);
-document.body.addEventListener("touchmove", function (e) {
-  if (e.target == canvas) {
-    e.preventDefault();
-  }
-}, false);
-  }
+  })
+  canvas.addEventListener('mouseup', () => isDrawing = false);
+  canvas.addEventListener('mouseout', () => isDrawing = false);
