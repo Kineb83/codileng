@@ -15,7 +15,10 @@
 <body>
         <div class="navbar">
             <a href="#principal">Principal</a>
-            <a href="#clientes">Clientes</a> 
+            <div class="subnav">
+              <a href="#clientes" onclick="mostrarClientes()">Clientes</a>
+            </div>
+            
             <div class="subnav">
               <button class="subnavbtn" > Servicios <i class="fa fa-caret-down"></i></button>
               <div class="subnav-content">
@@ -23,12 +26,15 @@
                 <a href="#capacitacion">Capacitación</a>
               </div>
             </div> 
+            
             <div class="subnav">
               <button class="subnavbtn" onclick="mostrarTutoriales()">Tutoriales</button>
             </div>
+            
             <div class="subnav">
                 <a href="#social" onclick="mostrarSocial()">Servicio Social</a>
             </div>
+            
             <div class="subnav">
               <a href="#diversion" onclick="verCanvas()">Diviértete</a>
           </div>
@@ -40,11 +46,12 @@
                 <h2>La primera empresa de software en San Luis de la Paz</h2>
             </div>
                 
-        <div id="Clientes" class="centrado">
+        <div id="clientes" style="display: block;" class="centrado">
             <h3>Clientes</h3>
             <p>Algunos de nuestros clientes que ya cuentan con su página web profesional</p><br/>
 
             <img src="./img/logoQuerubin.png" width="200px" height="auto"title="Florería El Querubín" alt="Florería El Querubín">
+            <p><a href="#" onclick="mostrarClientes()">Ver menos</a></p>
         </div>
 
         <div id="campana" class="centrado">
@@ -60,19 +67,23 @@
             <ul>
                 <li>Página Web profesional optimizada para dispositivos móviles</li>
                 <p>Tu página se verá genial en una computadora, tablet o celular</p>
+                
                 <li>Con subdominio y hosting gratuito</li>
                 <p>Un subdominio es garantía de que el nombre de tu negocio sea único.<br/>
                    Tu página alojada gratuitamente en servidores con altos estándares de seguridad</p>
+                
                 <li>Aplicación de herramientas SEO para que te encuentren en Google</li>
                 <p>SEO es la tecnología que posiciona tu página en los primeros resultados de búsqueda en Google</p>
+                
                 <li>Formulario de contacto, para que tus clientes te envíen un mensaje a tu email</li>
                 <p>Así puedes crear una base de clientes y enviar publicidad masiva</p>
+                
                 <li>Mapa de Google con tu ubicación precisa, así no se pierden tus clientes</li>
                 <p>Si quieres que tus clientes lleguen a tu negocio enséñales el camino</p>
-                <p style="font-size: 1.5em;">Por tan solo un pago único de <strong>$ 300.00</strong></p>
+                <p style="font-size: 1.5em;">Por un pago único de sólo <strong>$ 300.00</strong></p>
                 <p>Somos expertos en Software libre</p>
             </ul>
-            <p><a href="#" onclick="esconderServicios()">Ver menos</a></p>
+            <p><a href="#" onclick="mostrarServicios()">Ver menos</a></p>
         </div>
         <div id="capacitacion" class="centrado">
             <h3 >Te capacitamos en:</h3>
@@ -121,7 +132,8 @@
             <p>Puedes hacer tu servicio social con nosotros</p>
         </div>
         <div id="diversion" style="display: none;" class="centrado">
-          <h3>Diviértete con algunos juegos sencillos.</h3>
+          <h3>Dibuja líneas con el puntero</h3>
+          <p>No disponible para celulares</p>
           <canvas id="draw" width="300px" height="300px">Tu navegador no soporta el uso de Canvas.</canvas>
           
         </div>

@@ -1,4 +1,5 @@
 var servicios = document.getElementById("servicios");
+var clientes = document.getElementById("clientes");
 var campana = document.getElementById("campana");
 var w = document.getElementById("web");
 var android = document.getElementById("android");
@@ -13,14 +14,20 @@ let servicios = document.getElementById("servicios");
   if (servicios.style.display === "none") {
     servicios.style.display = "block";
     campana.style.display = "none";
-  }
-}
-function esconderServicios() {
-  if (campana.style.display === "none") {
+  }else{
     servicios.style.display = "none";
     campana.style.display = "block";
   }
 }
+
+function mostrarClientes(){
+  if(clientes.style.display === "block"){
+    clientes.style.display = "none";
+  }else{
+    clientes.style.display = "block";
+  }
+}
+
 
 function mostrarWeb() {
   if (w.style.display === "none") {
@@ -143,6 +150,7 @@ function verCanvas(){
   canvas.addEventListener('mousemove', draw);
   canvas.addEventListener('touchstart', () => isDrawing, false);
   canvas.addEventListener('touchmove', (e) => {
+    e.preventDefault();
     isDrawing = true;
     [lastX, lastY] = [e.offsetX, e.offsetY];
   })
