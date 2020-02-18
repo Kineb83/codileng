@@ -23,7 +23,7 @@
               <button class="subnavbtn" > Servicios <i class="fa fa-caret-down"></i></button>
               <div class="subnav-content">
                 <a href="#servicios" onclick="mostrarServicios()">Inclusión Digital</a>
-                <a href="#capacitacion">Capacitación</a>
+                <a href="#capacitacion" onclick="mostrarCapacitacion()">Capacitación</a>
               </div>
             </div> 
             
@@ -51,7 +51,7 @@
             <p>Algunos de nuestros clientes que ya cuentan con su página web profesional</p><br/>
 
             <img src="./img/logoQuerubin.png" width="200px" height="auto"title="Florería El Querubín" alt="Florería El Querubín">
-            <p><a href="#" onclick="mostrarClientes()">Ver menos</a></p>
+            <p><a href="#" onclick="mostrarClientes()">Ocultar</a></p>
         </div>
 
         <div id="campana" class="centrado">
@@ -83,9 +83,9 @@
                 <p style="font-size: 1.5em;">Por un pago único de sólo <strong>$ 300.00</strong></p>
                 <p>Somos expertos en Software libre</p>
             </ul>
-            <p><a href="#" onclick="mostrarServicios()">Ver menos</a></p>
+            <p><a href="#" onclick="mostrarServicios()">Ocultar</a></p>
         </div>
-        <div id="capacitacion" class="centrado">
+        <div id="capacitacion" style="display: none;" class="centrado">
             <h3 >Te capacitamos en:</h3>
             <a href="#web" onclick="mostrarWeb()">Desarrollo Web</a>&nbsp; &nbsp;
             <a href="#android" onclick="mostrarAndroid()">Desarrollo Android</a>&nbsp; &nbsp;
@@ -95,6 +95,7 @@
               <div id="web" style="display: none;">
                   <li >Desarrollo Web Full Stack</li>
                   <p>Aprende a diseñar y programar páginas web desde cero y adeńtrate en el mundo digital</p>
+                  <p>No te limites, también puedes crear aplicaciones de escritorio con lo que aprenderás en este curso</p>
                 </div>
                 <div id="android" style="display: none;">
                 <li>Desarrollo de aplicaciones para Android</li>
@@ -103,6 +104,7 @@
               <div id="salesforce" style="display: none;">
                 <li>Salesforce: Administrador y Desarrollador</li>
                 <p>Cada vez más empresas adoptan esta plataforma en la nube y la demanda de personal calificado es muy alta</p>
+                <p><a href="https://www.xertica.com/que-es-salesforce">Aquí</a> puedes ver qué es Salesforce</p>
               </div>
                 <div id="linux" style="display: none;">
                 <li >Sistemas Operativos GNU/Linux, como Ubuntu, Fedora, Mint, etc.</li>
@@ -119,6 +121,7 @@
                 </div>
                 
             </ul>
+            <p><a href="#" onclick="mostrarCapacitacion()">Ocultar</a></p>
         </div>
         <div id="tutoriales" style="display: none;" class="centrado">
             <h3>Tutoriales en Youtube</h3>
@@ -129,12 +132,12 @@
           </div>
         <div id="social" style="display: none;" class="centrado">
             <h3>Servicio Social</h3>
-            <p>Puedes hacer tu servicio social con nosotros</p>
+            <p>Si lo tuyo es la tecnología, puedes hacer tu Servicio Social con nosotros</p>
         </div>
         <div id="diversion" style="display: none;" class="centrado">
           <h3>Dibuja líneas con el puntero</h3>
-          <p>(No disponible para celulares)</p>
-          <canvas id="draw" style="touch-action: none;" width="300px" height="300px">Tu navegador no soporta el uso de Canvas.</canvas>
+          <div>(No disponible para celulares) <a href="#" onclick="mostrarJuegos()">Ocultar</a></div>
+          <canvas id="draw" style="touch-action: none; border: 1px solid #000000;" width="300px" height="300px">Tu navegador no soporta el uso de Canvas.</canvas>
           
         </div>
         
@@ -142,7 +145,7 @@
         <div id="contacto" class="centrado" class="background-SanLuis">
             <h3>Estamos en San Luis de la Paz  .</h3>
             <p>Envíanos un correo a codileng@gmail.com</p>
-            <img src="./img/sanLuis.jpg" alt="San Luis" height="200px" width="auto">
+            <img id="imagenSanLuis" src="./img/sanLuis.jpg" alt="San Luis" height="200px" width="auto">
         </div>
 
         <footer>

@@ -1,4 +1,5 @@
 var servicios = document.getElementById("servicios");
+var capacitacion = document.getElementById("capacitacion");
 var clientes = document.getElementById("clientes");
 var campana = document.getElementById("campana");
 var w = document.getElementById("web");
@@ -10,12 +11,22 @@ var funny = document.getElementById("diversion");
 var social = document.getElementById("social");
 
 function mostrarServicios() {
-let servicios = document.getElementById("servicios");
   if (servicios.style.display === "none") {
     servicios.style.display = "block";
     campana.style.display = "none";
   }else{
     servicios.style.display = "none";
+    campana.style.display = "block";
+  }
+}
+
+function mostrarCapacitacion(){
+  if (capacitacion.style.display === "none"){
+    capacitacion.style.display = "block";
+    servicios.style.display = "none";
+    campana.style.display = "none";
+  }else{
+    capacitacion.style.display = "none";
     campana.style.display = "block";
   }
 }
@@ -65,6 +76,8 @@ function mostrarSalesforce() {
 function mostrarJuegos(){
   if (funny.style.display === "none") {
       funny.style.display = "block";
+  }else{
+    funny.style.display = "none";
   }
 }
 
@@ -150,7 +163,6 @@ function verCanvas(){
   canvas.addEventListener('mousemove', draw);
   canvas.addEventListener('touchstart', () => isDrawing, false);
   canvas.addEventListener('touchmove', (e) => {
-    e.preventDefault();
     isDrawing = true;
     [lastX, lastY] = [e.offsetX, e.offsetY];
   })

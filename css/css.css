@@ -91,4 +91,15 @@ body {
     font-weight: bold;
   }
 
+  @media screen and (max-width: 460px) {
+    #imagenSanLuis {
+      width: 90%;
+      height: auto;
+    }
+    #draw{
+      display: none;
+    }
+    
+  }
+
 
