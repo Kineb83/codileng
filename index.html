@@ -9,15 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="./css/css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="codigo.js"></script>
-
 </head>
 <body>
         <div class="navbar">
             <a href="#principal">Principal</a>
-            <a href="#patrocinadores">Patrocinadores</a> 
+            <a href="#clientes">Clientes</a> 
             <div class="subnav">
               <button class="subnavbtn" > Servicios <i class="fa fa-caret-down"></i></button>
               <div class="subnav-content">
@@ -28,20 +26,25 @@
             <div class="subnav">
               <button class="subnavbtn" onclick="mostrarTutoriales()">Tutoriales</button>
             </div>
-            <a href="#social">Servicio Social</a> 
-            <a href="#diversion" onclick="verCanvas()">Diviertete</a>
+            <div class="subnav">
+                <a href="#social" onclick="mostrarSocial()">Servicio Social</a>
+            </div>
+            <div class="subnav">
+              <a href="#diversion" onclick="verCanvas()">Diviértete</a>
+          </div>
             <a href="#contacto">Contacto</a>
         </div>         
             
             <div id="div-img" class="centrado">
-                <img src="./img/logoCodileng.png" alt="logo codileng" width="200px" height="auto">
+                <img src="./img/logoCodileng.png" title="Códileng, Te abre las puertas del mundo digital" alt="logo codileng" width="200px" height="auto">
                 <h2>La primera empresa de software en San Luis de la Paz</h2>
             </div>
                 
-        <div id="patrocinadores" class="centrado">
-            <h3>Patrocinadores</h3>
-            <p>Para llevar a cabo nuestro proyecto necesitamos de tu apoyo.</p>
-            <p>Anuncia tu negocio o servicio en esta sección a cambio de un donativo.</p>
+        <div id="Clientes" class="centrado">
+            <h3>Clientes</h3>
+            <p>Algunos de nuestros clientes que ya cuentan con su página web profesional</p><br/>
+
+            <img src="./img/logoQuerubin.png" width="200px" height="auto"title="Florería El Querubín" alt="Florería El Querubín">
         </div>
 
         <div id="campana" class="centrado">
@@ -111,8 +114,9 @@
             <p>También puedes visitar nuestro canal de <a href="https://www.youtube.com/channel/UC5UyqJIlOCuJtIb-Trm5XSQ" target="_blank"><strong>Youtube</strong></a></p>
             <p>Aqui encontrarás distintos tutoriales sobre tecnología</p>
             <p>Suscríbete</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/578RNZilGs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
-        <div id="social" class="centrado">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/578RNZilGs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+          </div>
+        <div id="social" style="display: none;" class="centrado">
             <h3>Servicio Social</h3>
             <p>Puedes hacer tu servicio social con nosotros</p>
         </div>
@@ -132,8 +136,7 @@
         <footer>
             <p>Copyright &COPY; 2020 Daniel Ramírez Pérez  | San Luis de la Paz, Guanajuato</p>
         </footer>
-        <script src="codigo/codigo.js"></script>
-        <script src="pong-script.js"></script>
+        <script src="./codigo/codigo.js"></script>
         
 </body>
 
